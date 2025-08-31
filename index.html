@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="ko" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>신누리당 공식 홈페이지</title>
+  <meta name="description" content="신누리당 — 국민과 함께하는 정당 홈페이지" />
+  <meta name="color-scheme" content="light dark" />
+  <style>
+    :root{
+      --primary:#c62828;
+      --primary-dark:#a11818;
+      --bg:#ffffff;
+      --fg:#111111;
+      --muted:#555555;
+      --border:#e5e7eb;
+      --card:#f9f9f9;
+    }
+    body{margin:0;font-family:"Noto Sans KR",sans-serif;background:var(--bg);color:var(--fg)}
+    a{text-decoration:none;color:inherit}
+    header{border-bottom:1px solid var(--border);background:#fff;position:sticky;top:0;z-index:50}
+    .nav{max-width:1200px;margin:0 auto;padding:.8rem 1.2rem;display:flex;align-items:center;justify-content:space-between}
+    .logo{display:flex;align-items:center;gap:.6rem;font-weight:800;color:var(--primary)}
+    .logo img{height:32px}
+    nav a{margin-left:1.2rem;font-weight:600;color:#333;cursor:pointer}
+    nav a:hover{color:var(--primary)}
+    .hero{background:linear-gradient(to right,var(--primary),var(--primary-dark));color:#fff;padding:5rem 1.2rem;text-align:center}
+    .hero h1{font-size:2.5rem;margin:0}
+    .hero p{margin:.8rem 0 1.5rem;font-size:1.2rem}
+    .btn{background:#fff;color:var(--primary);padding:.8rem 1.2rem;border-radius:6px;font-weight:700;border:none;cursor:pointer;margin:.3rem}
+    .btn:hover{background:#f2f2f2}
+    section{padding:3rem 1.2rem;max-width:1100px;margin:0 auto}
+    h2{margin-bottom:1rem;font-size:1.8rem}
+    .grid{display:grid;gap:1.2rem}
+    @media(min-width:768px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+    .card{background:var(--card);padding:0;border-radius:12px;border:1px solid var(--border);overflow:hidden;cursor:pointer;transition:.2s}
+    .card:hover{transform:translateY(-5px);box-shadow:0 4px 10px rgba(0,0,0,.1)}
+    .card img{width:100%;height:180px;object-fit:cover}
+    .card-content{padding:1rem}
+    .card-content h3{margin:0;font-size:1.1rem;color:var(--primary)}
+    .card-content p{margin:.4rem 0 0;color:var(--muted);font-size:.9rem}
+    footer{background:#222;color:#ccc;padding:2rem 1.2rem;text-align:center;margin-top:2rem}
+    footer a{color:#ccc;margin:0 .5rem}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav">
+      <div class="logo">
+        <img src="images/1407141112732454932_upscaled.webp" alt="신누리당 로고" />
+        <span>신누리당</span>
+      </div>
+      <nav>
+        <a href="#vision">비전</a>
+        <a href="policy.html">정책홍보</a>
+        <a href="news.html">뉴스</a>
+        <a href="press.html">보도자료</a>
+        <a href="comment.html">논평</a>
+        <a href="bills.html">법안 발의</a>
+        <a href="schedule.html">주요 일정</a>
+        <a href="#leaders">인물소개</a>
+        <a href="#join">입당/후원</a>
+        <a href="#contact">연락처</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>국민과 함께하는 신누리당</h1>
+    <p>국민의 목소리를 담아내고 미래를 준비하는 정당</p>
+    <a href="https://discord.gg/spJDkVPBaf" target="_blank"><button class="btn">입당 신청하기</button></a>
+  </section>
+
+  <section id="vision">
+    <h2>비전과 가치</h2>
+    <div class="grid grid-3">
+      <div class="card"><div class="card-content"><h3>국민 우선</h3><p>국민의 삶을 최우선으로 생각하는 정당.</p></div></div>
+      <div class="card"><div class="card-content"><h3>미래 준비</h3><p>다음 세대를 위한 정책과 혁신.</p></div></div>
+      <div class="card"><div class="card-content"><h3>공정 사회</h3><p>투명하고 공정한 사회를 만드는 정당.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>정책홍보</h2>
+    <div class="grid grid-3">
+      <a href="policy-detail.html"><div class="card"><img src="policy.jpg" alt="정책홍보 이미지"><div class="card-content"><h3>청년 일자리 확대</h3><p>2025-08-20 · 청년을 위한 맞춤형 정책</p></div></div></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>뉴스</h2>
+    <div class="grid grid-3">
+      <a href="news-detail.html"><div class="card"><img src="news.jpg" alt="뉴스 이미지"><div class="card-content"><h3>최신 당 소식</h3><p>2025-08-25 · 국민과 함께하는 뉴스</p></div></div></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>보도자료</h2>
+    <div class="grid grid-3">
+      <a href="press-detail.html"><div class="card"><img src="press.jpg" alt="보도자료 이미지"><div class="card-content"><h3>공식 성명 발표</h3><p>2025-08-26 · 국민을 위한 메시지</p></div></div></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>논평</h2>
+    <div class="grid grid-3">
+      <a href="comment-detail.html"><div class="card"><img src="comment.jpg" alt="논평 이미지"><div class="card-content"><h3>정책 논평</h3><p>2025-08-27 · 주요 현안 논평</p></div></div></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>법안 발의</h2>
+    <div class="grid grid-3">
+      <a href="bills-detail.html"><div class="card"><img src="bills.jpg" alt="법안 이미지"><div class="card-content"><h3>복지법안 추진</h3><p>2025-08-28 · 국민 복지를 위한 발의</p></div></div></a>
+    </div>
+  </section>
+
+  <section>
+    <h2>주요 일정</h2>
+    <div class="grid grid-3">
+      <a href="schedule-detail.html"><div class="card"><img src="schedule.jpg" alt="일정 이미지"><div class="card-content"><h3>정책 토론회</h3><p>2025-09-01 · 주요 행사 안내</p></div></div></a>
+    </div>
+  </section>
+
+  <section id="leaders">
+    <h2>주요 인물 소개</h2>
+    <div class="grid grid-3">
+      <div class="card"><div class="card-content"><h3>당대표</h3><p>당을 대표하는 인사의 소개글.</p></div></div>
+      <div class="card"><div class="card-content"><h3>정책위원장</h3><p>정책 방향과 전략을 이끄는 인사.</p></div></div>
+      <div class="card"><div class="card-content"><h3>대변인</h3><p>국민과 소통하는 신누리당의 목소리.</p></div></div>
+    </div>
+  </section>
+
+  <section id="join">
+    <h2>입당 및 후원</h2>
+    <p>신누리당과 함께 대한민국의 미래를 만들어갈 여러분을 기다립니다.</p>
+    <a href="https://discord.gg/spJDkVPBaf" target="_blank"><button class="btn">입당 신청</button></a>
+    <a href="#"><button class="btn">후원하기</button></a>
+  </section>
+
+  <section id="contact">
+    <h2>연락처</h2>
+    <p>이메일: info@shinnuri.org | 전화: 02-1234-5678</p>
+    <p>주소: 서울특별시 여의도 정치로 123</p>
+  </section>
+
+  <footer>
+    <p>© 2025 신누리당. All rights reserved.</p>
+    <div>
+      <a href="#">페이스북</a> | <a href="#">트위터</a> | <a href="#">인스타그램</a>
+    </div>
+  </footer>
+</body>
+</html>

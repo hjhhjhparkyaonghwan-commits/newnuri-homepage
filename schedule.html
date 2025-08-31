@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>신누리당 - 주요 일정</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body{margin:0;font-family:"Noto Sans KR",sans-serif;background:#fff;color:#111}
+    header, footer{background:#c62828;color:#fff;text-align:center;padding:1rem}
+    .container{max-width:1100px;margin:2rem auto;padding:0 1rem}
+    h1{margin-bottom:1.5rem}
+    .grid{display:grid;gap:1.5rem}
+    @media(min-width:768px){.grid{grid-template-columns:repeat(3,1fr)}}
+    .card{border:1px solid #eee;border-radius:12px;overflow:hidden;box-shadow:0 2px 6px rgba(0,0,0,0.08);transition:.2s}
+    .card:hover{transform:translateY(-4px)}
+    .card img{width:100%;height:160px;object-fit:cover}
+    .card-body{padding:1rem}
+    .card h3{margin:0 0 .5rem;font-size:1.1rem}
+    .card p{margin:0 0 .5rem;color:#555;font-size:.9rem}
+    .date{font-size:.85rem;color:#888;margin-bottom:.5rem}
+    a{text-decoration:none;color:inherit}
+  </style>
+</head>
+<body>
+  <header>
+    <h2>신누리당 주요 일정</h2>
+  </header>
+
+  <div class="container">
+    <h1>다가오는 일정</h1>
+    <div class="grid">
+      <a href="schedule-detail.html">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200.png?text=일정1" alt="일정1">
+          <div class="card-body">
+            <div class="date">2025-09-05</div>
+            <h3>청년 정책 토론회</h3>
+            <p>서울 여의도에서 청년 정책을 주제로 한 공개 토론회 개최.</p>
+          </div>
+        </div>
+      </a>
+      <a href="schedule-detail.html">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200.png?text=일정2" alt="일정2">
+          <div class="card-body">
+            <div class="date">2025-09-12</div>
+            <h3>지방 순회 간담회</h3>
+            <p>부산, 대구, 광주 등 주요 도시에서 시민 간담회 진행.</p>
+          </div>
+        </div>
+      </a>
+      <a href="schedule-detail.html">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x200.png?text=일정3" alt="일정3">
+          <div class="card-body">
+            <div class="date">2025-09-20</div>
+            <h3>신누리 정책 발표회</h3>
+            <p>신규 경제 정책과 사회 개혁 방안을 발표하는 행사.</p>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 신누리당</p>
+  </footer>
+</body>
+</html>
