@@ -1,0 +1,9 @@
+// functions/log-ip.js
+export async function handler(event, context) {
+  const ip = event.headers['x-forwarded-for'] || event.headers['client-ip'] || 'Unknown';
+  console.log("Visitor IP:", ip); // Netlify Logs에서 확인 가능
+  return {
+    statusCode: 200,
+    body: `Logged IP: ${ip}`
+  };
+}
